@@ -30,18 +30,18 @@ Example of a command line I ran:
 I have added a Main.py file that has for mission to implement the pipeline shown above.
 Running main.py will run the project.
 
-```python python main.py -f <Path of xml file of face detection model> \
+python``` python main.py -f <Path of xml file of face detection model> \
 -fl <Path of xml file of facial landmarks detection model> \
 -hp <Path of xml file of head pose estimation model> \
 -g <Path of xml file of gaze estimation model> \
--i <Path of input video file or enter cam for taking input video from webcam> ```
+-i <Path of input video file or enter cam for taking input video from webcam>```
 
 ## Documentation
 *TODO:* Include any documentation that users might need to better understand your project code. For instance, this is a good place to explain the command line arguments that your project supports.
 
 To visualize the output of a model, we'll use the flags.
 Example of a command line I ran:
-```python3 main.py -f /Users/jeremycohen/Downloads/starter/models/intel/face-detection-adas-0001/FP16/f
+python```python3 main.py -f /Users/jeremycohen/Downloads/starter/models/intel/face-detection-adas-0001/FP16/f
 ace-detection-adas-0001.xml -hp /Users/jeremycohen/Downloads/starter/models/intel/head-pose-estimation-adas-0001/FP16/head-pose-estimation-adas-0001.xml -g /Users/jerem
 ycohen/Downloads/starter/models/intel/gaze-estimation-adas-0002/FP16/gaze-estimation-adas-0002.xml -fl /Users/jeremycohen/Downloads/starter/models/intel/landmarks-regre
 ssion-retail-0009/FP16/landmarks-regression-retail-0009.xml -i cam -flags fd ge hp```
