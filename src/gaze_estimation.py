@@ -6,7 +6,6 @@ import cv2
 import numpy as np
 from openvino.inference_engine import IECore
 import math
-import time
 
 class GazeEstimationModel:
     '''
@@ -57,10 +56,7 @@ class GazeEstimationModel:
                 print("Give the path of cpu extension")
                 exit(1)
         '''
-        start = time.time()
         self.exec_net = self.plugin.load_network(network=self.network, device_name=self.device,num_requests=1)
-        print(time.time() - start)
-
         self.input_name = [i for i in self.network.inputs.keys()]
         self.input_shape = self.network.inputs[self.input_name[1]].shape
         self.output_names = [i for i in self.network.outputs.keys()]

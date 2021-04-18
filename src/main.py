@@ -19,7 +19,7 @@ def build_argparser():
     parser = ArgumentParser()
     parser.add_argument("-f", "--facedetectionmodel", required=True, type=str,
                         help="Specify Path to .xml file of Face Detection model.")
-    parser.add_argument("-fl", "--faciallandmarkmodel", required=True, type=str,
+    parser.add_argument("-fl", "--faciallandmarksmodel", required=True, type=str,
                         help="Specify Path to .xml file of Facial Landmark Detection model.")
     parser.add_argument("-hp", "--headposemodel", required=True, type=str,
                         help="Specify Path to .xml file of Head Pose Estimation model.")
@@ -135,8 +135,8 @@ def main():
                 
             cv2.imshow("visualization",cv2.resize(preview_frame,(500,500)))
         
-        #if frame_count%5==0:
-        #    mc.move(new_mouse_coord[0],new_mouse_coord[1])    
+        if frame_count%5==0:
+            mc.move(new_mouse_coord[0],new_mouse_coord[1])    
         if key==27:
                 break
     logger.error("VideoStream ended...")
