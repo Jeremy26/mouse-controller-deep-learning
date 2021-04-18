@@ -81,7 +81,7 @@ Taken for the Gaze Estimation on MacOS.
 *TODO:* Discuss the benchmark results and explain why you are getting the results you are getting. For instance, explain why there is difference in inference time for FP32, FP16 and INT8 models.
 
 Here's the result!<p>
-![pipeline img](pipeline_image.png)
+![pipeline img](pipeline_imgs.png)
 
 ## Stand Out Suggestions
 This is where you can provide information about the stand out suggestions that you have attempted.
